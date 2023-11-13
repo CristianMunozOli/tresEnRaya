@@ -7,4 +7,5 @@ public class TableroUseCases {
     public TableroUseCases(TableroRepository tableroRepository){this.tableroRepository=tableroRepository;}
     public void movimiento(Tablero tablero){this.tableroRepository.movimiento(tablero);}
     public void limpia(){this.tableroRepository.limpia();}
+    public String[][] mostrarTablero(){return this.tableroRepository.mostrarTablero();}
 }

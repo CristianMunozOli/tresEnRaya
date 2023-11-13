@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{margin:0px;padding:0px;}
+        td{text-align:center;border: 1px solid black;width:100px;height:100px;}
+
+    </style>
+</head>
+<body>
+<table>
+    <tr th:each="fila : ${tablero}">
+        <td th:each="celda : ${fila}" th:text="${celda}"></td>
+    </tr>
+</table>
+
+
+</body>
+</html>
